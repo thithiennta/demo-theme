@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmicrofrontend=self.webpackChunkmicrofrontend||[]).push([[996],{757:function(n,o,c){c(578);new class{constructor(){console.log("[Page] - Init Page BUIBlogList")}}}},function(n){n.O(0,[672,592],(function(){return o=757,n(n.s=o);var o}));n.O()}]);
