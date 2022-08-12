@@ -34,11 +34,12 @@
 			'publicly_queryable' => true,
 			'show_ui'            => true,
 			'show_in_menu'       => true,
+			'show_in_nav_menus'  => true,
 			'query_var'          => true,
 			'rewrite'            => array( 'slug' => 'film' ),
 			'capability_type'    => 'post',
 			'has_archive'        => true,
-			'hierarchical'       => false,
+			'hierarchical'       => true,
 			'menu_position'      => 20,
 			'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
 			'taxonomies'         => array( 'genre' ),
@@ -72,10 +73,11 @@
 		);
 
 		$genre_args = array(
-			'hierarchical'          => false,
+			'hierarchical'          => true,
 			'labels'                => $genre_labels,
 			'show_ui'               => true,
 			'show_admin_column'     => true,
+			'show_in_nav_menus'  => true,
 			'update_count_callback' => '_update_post_term_count',
 			'query_var'             => true,
 			'rewrite'               => array( 'slug' => 'genre' ),

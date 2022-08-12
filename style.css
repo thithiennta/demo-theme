@@ -20,3 +20,37 @@ This theme, like ABC_WP, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned
 with others.
 */
+.navbar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.collapse:not(.show) {
+  display: flex !important;
+}
+.navbar-nav {
+  flex-direction: row !important;
+  gap: 1rem !important;
+}
+
+.footer-credits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.nav-links .page-numbers.placeholder {
+  cursor: pointer !important;
+  background-color: initial;
+  opacity: unset;
+  vertical-align: unset;
+}
