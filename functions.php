@@ -13,6 +13,7 @@ function cde_theme_register_styles() {
 	wp_enqueue_script( 'cde-theme-style', get_template_directory_uri() . '/script.js', array( 'jquery' ), '1.0', 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'cde_theme_register_styles' );
+add_filter( 'use_block_editor_for_post', '__return_false', 10 );
 
 require_once get_template_directory() . '/includes/custom-assets.php';
 require_once get_template_directory() . '/includes/custom-post-type.php';
